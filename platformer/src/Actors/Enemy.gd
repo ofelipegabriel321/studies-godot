@@ -1,6 +1,8 @@
 extends "res://src/Actors/Actor.gd"
 
 func _ready() -> void:
+	# A partir disso o physics não executa até o Enemy entra na tela:
+	set_physics_process(false)
 	_velocity.x = -speed.x
 
 func _physics_process(delta: float) -> void:
