@@ -23,6 +23,10 @@ _global_script_class_icons={
 config/name="Platformer (tutorial)"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/test_height=720
+
 [input]
 
 move_left={
