@@ -1,5 +1,7 @@
 extends "res://src/Actors/Actor.gd"
 
+export var score: = 100
+
 func _ready() -> void:
 	# A partir disso o physics não executa até o Enemy entra na tela:
 	set_physics_process(false)
@@ -17,4 +19,8 @@ func _on_StompDetector_body_entered(body: Node) -> void:
 	if body.global_position.y > get_node("StompDetector").global_position.y:
 		return
 	get_node("CollisionShape2D").set_deferred("disabled", true)
+	die()
+
+func die() -> void:
 	queue_free()
+	PlayerData.score += score
