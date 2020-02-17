@@ -57,6 +57,7 @@ margin_bottom = 107.0
 margin_top = 111.0
 margin_right = 372.0
 margin_bottom = 218.0
+text = "Main Screen"
 next_scene_path = "res://src/Screens/MainScreen.tscn"
 
 [node name="QuitButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 2 )]
